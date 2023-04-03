@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    border: 5px solid white;
+    border-radius: 15px;
+}
+
+
+#gridone {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    background-color: grey;
+    /* grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; */
+    grid-template-areas:
+        "a a b"
+        "c d b"
+        "c d e"
+        "f d e"
+        "f g g"
+    ;
+}
